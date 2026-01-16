@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/buttonFinishCurrentCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp"
+        android:backgroundTint="#6750a4"
+        android:onClick="finishCall"
+        android:text="@string/button_finish_call"
+        app:cornerRadius="0dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMuteDinamic" />
+
+    <TextView
+        android:id="@+id/subscriberInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        android:text="Абонент"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/timeInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subscriberInfo" />
+
+    <Button
+        android:id="@+id/buttonMuteMicrophone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#6750a4"
+        android:onClick="setMicrophone"
+        android:text="@string/button_mute_microphone"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonFinishCurrentCall"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/buttonMuteDinamic"
+        app:layout_constraintTop_toBottomOf="@+id/timeInfo" />
+
+    <Button
+        android:id="@+id/buttonMuteDinamic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:backgroundTint="#6750a4"
+        android:onClick="setDinamic"
+        android:text="@string/button_mute_dinamic"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonFinishCurrentCall"
+        app:layout_constraintRight_toLeftOf="@+id/buttonMuteMicrophone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeInfo"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/addUser"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="addUserCall"
+        android:text="@string/add_user_call"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subscriberInfo" />
+
+    <Button
+        android:id="@+id/buttonConfContacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="getListContactsCall"
+        android:text="@string/get_list_contacts_call"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/buttonMuteDinamic"
+        app:layout_constraintTop_toBottomOf="@+id/addUser" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

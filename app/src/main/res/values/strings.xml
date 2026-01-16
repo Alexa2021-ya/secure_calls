@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">App</string>
+    <string name="button_call_main">ПОЗВОНИТЬ</string>
+    <string name="button_call">Позвонить</string>
+    <string name="title_list_contacts">Контакты</string>
+    <string name="title_button_update">ОБНОВИТЬ</string>
+    <string name="title_reg_activity">Регистрация</string>
+    <string name="title_phone_number_reg">Введите номер телефона</string>
+    <string name="button_reg">ЗАРЕГИСТРИРОВАТЬСЯ</string>
+    <string name="button_finish_call">ЗАВЕРШИТЬ ВЫЗОВ</string>
+    <string name="button_ok_incoming_call">ПРИНЯТЬ</string>
+    <string name="button_no_incoming_call">ОТКЛОНИТЬ</string>
+    <string name="title_incoming_call">Входящий вызов</string>
+    <string name="title_config">Настройки</string>
+    <string name="title_name_user">Номер телефона</string>
+    <string name="button_update_user">Сохранить изменения</string>
+    <string name="text_view_outgoing_call">Звонок</string>
+    <string name="button_mute_microphone">Микрофон</string>
+    <string name="button_mute_dinamic">Динамик</string>
+    <string name="button_hold_call">Удержание</string>
+    <string name="data_call">Данные о звонке</string>
+    <string name="remove">Удалить</string>
+    <string name="select_all">Выделить всё</string>
+    <string name="time_call">Время: </string>
+    <string name="status_call">Статус: </string>
+    <string name="type_call">Тип: </string>
+    <string name="all_time_call">Общее время: </string>
+    <string name="date_call">Дата: </string>
+    <string name="name_call">Кому: </string>
+    <string name="title_group_call">Групповой звонок</string>
+    <string name="add_user_call">+</string>
+    <string name="get_list_contacts_call">Список пользователей</string>
+    <string name="delete_contact_call">Исключить</string>
+    <string name="answer_conf_call">Присоединиться</string>
+</resources>

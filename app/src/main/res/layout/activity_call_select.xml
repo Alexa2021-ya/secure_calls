@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow>
+            <TextView
+                android:id="@+id/callData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/data_call"
+                android:textSize="24dp"
+                app:layout_constraintBottom_toTopOf="@+id/nameSelectCall"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </TableRow>
+
+        <TableRow>
+            <ListView
+                android:id="@+id/contactsCallList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/dateViewCall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/date_call"
+                android:textSize="16dp"
+                />
+            <TextView
+                android:layout_marginTop="16dp"
+                android:id="@+id/dateSelectCall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Дата" />
+
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/allTimeViewCall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/all_time_call"
+                android:textSize="16dp"
+                />
+            <TextView
+                android:id="@+id/allTimeSelectCall"
+                android:layout_width="166dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Общее время звонка" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/typeViewCall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/type_call"
+                android:textSize="16dp"
+                />
+            <TextView
+                android:layout_marginTop="16dp"
+                android:id="@+id/typeSelectCall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Тип звонка" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/timeViewCall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/time_call"
+                android:textSize="16dp"
+                />
+            <TextView
+                android:layout_marginTop="16dp"
+                android:id="@+id/timeSelectCall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Время" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/statusViewCall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/status_call"
+                android:textSize="16dp"
+                />
+            <TextView
+                android:layout_marginTop="16dp"
+                android:id="@+id/statusSelectCall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Статус звонка" />
+
+        </TableRow>
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

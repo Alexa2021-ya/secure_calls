@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yourapp="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="1"
+        android:title="Настройки" />
+
+    <item
+        android:id="@+id/action_select_all"
+        android:title="@string/select_all"
+        yourapp:showAsAction="always"
+        android:visible="false"
+        />
+
+    <item
+        android:id="@+id/action_remove"
+        android:title="@string/remove"
+        yourapp:showAsAction="always"
+        android:visible="false"
+    />
+
+    <item
+        android:id="@+id/action_call"
+        android:title="@string/button_call"
+        yourapp:showAsAction="always"
+        android:visible="false"
+        />
+
+    <item
+        android:id="@+id/action_delete_call"
+        android:title="@string/delete_contact_call"
+        yourapp:showAsAction="always"
+        android:visible="false"
+        />
+</menu>
